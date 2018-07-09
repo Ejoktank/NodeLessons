@@ -1,7 +1,6 @@
 var a = 15;
 var b = true;
 var c = "dsgsdgsdg";
-var d = '3';
 
 if(true) {
     //
