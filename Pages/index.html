@@ -2,28 +2,39 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div class="header unselectable">
-        <div class="content-center width-200">
+        <div id="header"  class="content-center width-200">
             <b>EJOKTANK</b>
         </div>
     </div>
-    <div class="main content-center">
+    <div id="main" class="main content-center">
         <div class="brick">
             <div class="right-border margin-20">
                 <div class="custom-textbox">
-                    <input class="cinput" placeholder="Введи логин, пидор..." type="text">
+                    <input id="loginTextBox" class="cinput" placeholder="Введи логин, пидор..." type="text">
                 </div>
                 <div class="custom-textbox">
                     <input class="cinput" placeholder="Введи пароль, пидор..." type="password">
                 </div>
-                <div class="custom-textbox button unselectable">
+                <div onclick="WriteName()" class="custom-textbox button unselectable">
                     <strong>LOGIN</strong>
                 </div>
             </div>
         </div>
+        <div id="AddButton" style="width: 780; margin-left:10;" onclick="Add()" class="unselectable button custom-textbox">
+            <div class="content-center">
+            Add
+            </div>
+        </div>
+        <div id="DeleteButton" style="width: 780; margin-left:10;" onclick="Delete()" class="unselectable button custom-textbox">
+                <div class="content-center">
+                Delete
+                </div>
+            </div>
     </div>
 
 </body>

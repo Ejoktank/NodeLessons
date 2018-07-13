@@ -76,8 +76,6 @@ button:focus {
     font-family: Tahoma;
     color: #FFF;
     font-size: 15;
-    position: absolute;
-    bottom: 0;
     cursor: pointer;
 }
 
@@ -97,6 +95,7 @@ button:focus {
 .button:active {
     background :rgb(243, 139, 139);
 }
+
 
 
 
