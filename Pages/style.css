@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background: rgb(223, 223, 223);
+}
+
+.header {
+    height: 45;
+    background: rgb(255, 110, 110);
+    font-family: Tahoma;
+    color: #FFF;
+    font-size: 25;
+    padding-top: 12;
+}
+
+.content-center {
+    text-align: center;
+    margin: auto;
+}
+
+.width-200 {
+    max-width:200;
+}
+
+
+
