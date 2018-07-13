@@ -1,0 +1,91 @@
+body {
+    margin: 0; 
+    background:  #CCEBFF;
+}
+
+.textstyle {
+    font-family: "Brush Script Std";
+    font-size: 30;
+    color: #B2956B;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5;  
+
+}
+
+.width400 {
+    width: 400;
+    
+}
+
+.center-50 {
+    background: transparent;
+    margin: auto;   
+    min-height: 50;
+
+}
+
+.page {
+    float: right;
+    width: 760;
+    height: 100%;
+    background: #E6F5FF;
+    margin-top: 20;
+}
+
+.main {    
+    margin: auto;
+    width: 1000;
+    min-height: 1000;
+}
+
+.button {
+    float: left;
+    width: 220;
+    background: #E6F5FF;
+    margin-top: 20;
+    box-shadow: 1px 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+}
+
+.menu-list {
+    margin-top : 0;
+    padding-left: 0; 
+    padding-top: 0;
+    margin-bottom: 0; 
+}
+
+li {
+    list-style-type: none;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+    padding-left: 15; 
+    padding-top: 10;
+    cursor: pointer; 
+
+}
+
+.font-list {
+    font-size: 18;
+    text-align: left;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.center-50 {
+ 
+    background: transparent;
+    margin: auto;   
+    min-height: 50; 
+}
+
+.brick {
+    width: 760;
+    min-height: 200;
+    background: #FFF;
+    margin-top: 20;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+}

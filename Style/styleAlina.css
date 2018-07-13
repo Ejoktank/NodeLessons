@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background: #edeef0;
+}
+
+.main {    
+    width: 1000;
+    min-height: 1000;
+}
+
+.center-50 {
+    background: transparent;
+    margin: auto;   
+    min-height: 50;
+
+}
+
+.width400 {
+    width: 400;
+    
+}
+
+.font-header {
+    font-family: "Tahoma";
+    font-size: 30;
+    color: #FFF;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5; 
+
+}
+
+.brick {
+    width: 760;
+    min-height: 200;
+    background: #FFF;
+    margin-top: 20;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+}
+
+.header {
+    height: 50;
+    background: #F01A30;
+}
+
+.main-right{
+    float: right;
+    width: 800;
+}
+
+.main-left {
+    float: left;
+    background: transparent;
+    width: 200;
+    min-height: 100;
+    
+
+}
+
+.menu-list {
+    padding-left: 0; 
+}
+
+li {
+    margin-top: 10;
+    list-style-type: none;
+    width: 180;
+    height: 40;
+    background: #FFF7FA;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+    padding-left: 15; 
+    padding-top: 10;
+    cursor: pointer; 
+
+}
+
+.font-list {
+    font-family: "Tahoma";
+    font-size: 18;
+    color: #285473;
+    text-align: left;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}

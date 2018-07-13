@@ -1,75 +1,32 @@
-var a = 15;
-var b = true;
-var c = "dsgsdgsdg";
-var d = '3';
+var express = require('express');
+const url = require('url');
+var path = require("path");
+var app = express();
 
-if(true) {
-    //
-}
-else {
-    //
-}
+app.get('/Scripts/*', function (req, res) {
+  var parsed = url.parse(req.originalUrl);
+  var file = path.basename(parsed.pathname);
+  res.sendFile(__dirname+"/Scripts/"+file+".js");
+});
 
-var rt = [10,20,340,605,402,20];
+app.get('/Styles/*', function (req, res) {
+  var parsed = url.parse(req.originalUrl);
+  var file = path.basename(parsed.pathname);
+  res.sendFile(__dirname+"/Style/"+file+".css");
+});
 
-var max = rt[0];
-for(var i = 1; i < rt.length; i++)
-{
-    if(rt[i] > max) max = rt[i];
-}
+app.get('/', function (req, res) {
+  res.sendFile(__dirname+"/Pages/main.html");
+});
 
-var word = "gdfgdfpgfdgdpfg";
+app.get('/*', function (req, res) {
+    var parsed = url.parse(req.originalUrl);
+    var file = path.basename(parsed.pathname);
+    res.sendFile(__dirname+"/Pages/"+file+".html");
+});
 
-var j = 0;
-while(word[j] != 'p' && j <word.length)
-{
-    j++;
-}
 
-if(j == word.length) {
-    //console.log('Хер вам');
-}
-else {
-    //console.log(j);
-}
 
-//console.log(max);
-
-var names = ['Ilya', 'Egor', 'Sonya', 'Adruha', 'Alina', 'Mike', 'Jeremy'];
-
-for(var i = 0; i < names.length; i++){
-    var amount = names[i].length;
-    //console.log("hello, " + names[i] + "y tebya " + amount + " bykvy"); 
-}
-
-var word1 = 'qakfoisolfspouiughw2';
-var word2 = 'qtkfosohlfspouiughw2';
-
-var t = 0;
-for(var i = 0; i < word1.length; i++)
-{
-
-    if(word1[i] != word2[i]) t++;
-    
-}
-//console.log(t);
-
-var per = 12;
-var ans = 1;
-
-var fuct = 3;
-for(var i = fuct; i > 0; i--)
-{
-    ans *= i;
-}
-
-function FindFuct(number) {
-    if(number == 1)
-        return 1;
-    else
-        return number * FindFuct(number-1);
-}
-
-ans = FindFuct(12);
-
-console.log(ans);
+app.listen(80, function () {
+  console.log('App listening on port 80!');
+});

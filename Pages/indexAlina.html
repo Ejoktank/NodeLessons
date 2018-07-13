@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Styles/styleAlina">
+        <title> ЖОПА </title>
+        <script type="text/javascript">
+        var a = 0;
+            function AddBrick() {
+                document.getElementById("maindiv").innerHTML += "<div id=\""+a+"\" class=\"brick center-50\"></div>";
+                a++;
+            }
+            function DeleteBrick() {
+                if(a > 0) {
+                var parent = document.getElementById("maindiv");
+                var child = document.getElementById(a-1);
+                parent.removeChild(child);
+                a--;
+            }
+            }
+
+            function AddOver() {
+                document.getElementById("Add").style.background = "#71DDE3";
+            }
+
+            function AddOut() {
+                document.getElementById("Add").style.background = "#FFF";
+            }
+        </script>
+        
+    </head>
+        <body>
+            <div class="header">
+                <div class="center-50 width400 font-header" ><b>ALE4KA</b></div>
+            </div>
+            <div class="main center-50">
+                <div id="maindiv" class="main-right"> 
+                </div>
+                <div class="main-left">
+                    <ul class="menu-list font-list">
+                        <a href="https://vk.com/a.shtokman"><li>Моя страница</li></a>
+                        <li>Продажи</li>
+                        <li>Покупки</li>
+                        <li>О нас</li>
+                        <li id="Add" onmouseover="AddOver()" onmouseout="AddOut()" onclick="AddBrick()">Добавить</li>
+                        <li id="Delete" onclick="DeleteBrick()">Удалить</li>
+                    </ul>
+                </div>                 
+            </div>
+        </body>
+
+       
+</html>
