@@ -1,0 +1,51 @@
+.body{
+    background: rgb(128, 128, 128);
+}
+
+.header {
+    margin: 0;
+    height: 80;
+    background: #BB55AD; 
+    font-family: Cambria;
+    font-size: 25;
+    color: rgb(240, 236, 11);
+    padding-top: 12;
+}
+
+.centre-placed {
+    text-align: center;
+    margin: auto;
+}
+
+.size-200{
+    max-width: 400;
+}
+
+.no-margin{
+    margin: 0%;
+}
+
+.little-box{
+    overflow: hidden;
+    margin: 15;
+    background: #617ed4;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+    min-height: 100;
+    max-width: 300;
+    border-radius: 5px;
+}
+
+.left-side{
+    position: relative;
+    left: 0;
+}
+
+.right-side{
+    position: relative;
+    right: 0;
+}
+
+.mid-side{
+    position: relative;
+    align-self: center;
+}
