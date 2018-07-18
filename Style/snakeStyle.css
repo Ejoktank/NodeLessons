@@ -1,0 +1,23 @@
+.border-block {
+    top : 10;
+    left: 10;
+    position: absolute;
+    width: 30;
+    height: 30;
+    background: rgb(105, 105, 105);
+    border: 4px solid #CDCDCD;
+    z-index: 10;
+}
+body {
+    margin: 0;
+    background: rgb(233, 233, 233);
+}
+
+.main {
+    position: absolute;
+    top: 10;
+    left: 10;
+    width: 308;
+    height: 308;
+    background: #FFF;
+}
